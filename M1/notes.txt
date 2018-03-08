@@ -1,0 +1,36 @@
+- npm install -g http-server
+- http-server (roda o servidor)
+
+- https://cdnjs.com/libraries/react/15.1.0
+
+-https://reactjs.org/tutorial/tutorial.html
+
+----------------------------------
+---------ReactDOM.render----------
+- primeiro parametro: elemento
+- segundo parametro: onde vai renderizar
+- ReactDOM.render(elemento, local)
+
+--------ELEMENTOS ANINHADOS-------
+- Ex: React.createElement('h1',null,React.createElement('span',null,'Texto do span'));
+----------------------------------
+
+-Existe alguns elementos principais que estao criados no DOM, que nao precisam de 'create element'
+- Ex: React.DOM.h1(null,conteudo)
+
+------------ JSX -----------------
+- Uma forma melhor de escrever o React.createElement
+- É preciso renderizar esse tipo de script com babel
+- EX: ReactDOM.render(
+      <h1>Hello Word</h1>,
+      document.getElementById('app')
+    )
+
+- P1: elemento inteiro
+- P2: onde ira ficar
+- O tipo do script precisa ser babel
+
+
+
+
+
