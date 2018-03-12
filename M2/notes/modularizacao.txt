@@ -1,0 +1,7 @@
+-----------MODULARIZANDO---------
+- exports
+- require
+- tudo roda no index.js
+
+----------- INSTALAR DEPENDENCIAS REACT, REACTDOM------------------
+- npm i react react-dom

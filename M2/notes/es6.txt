@@ -1,0 +1,31 @@
+----------INSTALANDO BABEL-------
+- npm i --save-dev babel-core babel-loader babel-preset-es2015 babel-preset-stage-0
+
+--------CONFIG BABEL-------------
+- Criar arquivo .babelrc
+-	{
+  	"presets":["es2015","stage-0"]
+	}
+
+- Atualizar o webpack.config
+-  module:{
+    rules: [{
+      test: /\.js$/,
+      exclude: /node_modules/,
+      include: /src/,
+      loader: 'babel'
+    }]
+  }
+
+--------------JSX---------------
+- npm install --save-dev babel-preset-react
+- {
+  "presets":["es2015","stage-0","react"]
+}
+
+-----------MELHORAR O BUNDLE--------
+- utilizando sourcemaps
+-  devtool:'source-map' no webpack
+
+
+
