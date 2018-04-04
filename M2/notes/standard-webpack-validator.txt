@@ -1,0 +1,4 @@
+---------INSTALANDO------------
+- adicionar dependencias
+- npm install --save-dev standard standard-loader
+- npm install --save-dev webpack-validator

@@ -1,0 +1,8 @@
+---------INSTALAÇÃO----------
+- npm i --save-dev react-hot-loader@3.0.0-beta.2
+
+- atualizar o webpack
+- atualizar .babelrc
+- criar um arquivo server.js para rodar com node.js
+- criar entrada start no package.json
+- atualizar arquivo sr c/index.js
