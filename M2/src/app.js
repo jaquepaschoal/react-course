@@ -1,11 +1,26 @@
 'use strict'
-import React from 'react'
-import createReactClass from 'create-react-class'
+import React, { Component } from 'react'
 
-const App = createReactClass({
-  render: function(){
-    return <h1>Titulo00</h1>
+class App extends Component {
+  constructor () {
+    super()
+    this.state = {
+      text: 'Fernando'
+    }
   }
-})
+
+  render () {
+    return (
+      <div onClick={()=> this.setState({
+        text: 'Outro texto'
+      })} >
+        {this.state.text}
+      </div>
+    )
+  }
+}
+
+
+
 
 export default App

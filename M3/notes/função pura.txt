@@ -1,0 +1,7 @@
+------- FUNÇÕES PURAS ----------
+
+- Deve sempre retornar o mesmo valor quando é entrado os mesmos parametro e não faz modificação em objetos externos;
+
+- O defaultProps fica como uma propriedade da função pura
+
+

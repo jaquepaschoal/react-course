@@ -4,7 +4,7 @@ const path = require('path');
 const webpack = require('webpack')
 
 module.exports = {
-  devtool:'eval-source-map',
+  devtool:'source-map',
   entry: [
     'react-hot-loader/patch',
     'webpack-dev-server/client?http://localhost:3000',
@@ -19,9 +19,7 @@ module.exports = {
   },
 
   plugins:[
-    new webpack.HotModuleReplacementPlugin({
-      debug: true
-    })
+    new webpack.HotModuleReplacementPlugin()
   ],
 
   module:{

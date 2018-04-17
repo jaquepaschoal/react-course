@@ -19,12 +19,6 @@
   "dependencies": {
     "create-react-class": "^15.6.3",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "source-map": "^0.7.2"
-  },
-  "standard": {
-    "globals": [
-      "alert"
-    ]
+    "react-dom": "^16.2.0"
   }
 }
