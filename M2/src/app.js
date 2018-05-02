@@ -1,26 +1,36 @@
 'use strict'
 import React, { Component } from 'react'
+import Button from './button'
 
 class App extends Component {
-  constructor () {
+  constructor() {
     super()
     this.state = {
-      text: 'Fernando'
+      checked: false,
+      showContent: false
     }
   }
-
   render () {
     return (
-      <div onClick={()=> this.setState({
-        text: 'Outro texto'
-      })} >
-        {this.state.text}
+      <div>
+        <label>
+          <input 
+            type='checkbox' 
+            checked={this.state.checked} 
+            onChange={()=>{
+              this.setState({checked: !this.state.checked}, ()=>{
+                this.setState({showContent: this.state.checked})
+              })
+            }} 
+          />
+          Mostrar conteúdo
+        </label> 
+        {this.state.showContent && <div>Olha eu aqui</div>}
       </div>
+     
     )
   }
 }
-
-
 
 
 export default App
