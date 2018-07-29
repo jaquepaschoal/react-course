@@ -1,0 +1,8 @@
+- Ter um projeto react
+- npm i -g getstorybook
+- npm i -g @storybook/cli
+- npm i @storybook/react@alpha
+- getstorybook --use-npm
+- yarn run storybook
+
+
